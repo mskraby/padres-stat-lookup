@@ -1,0 +1,17 @@
+# Secrets -- never commit the real API key
+.streamlit/secrets.toml
+
+# Raw source CSVs -- large (batting.csv is 681MB), only needed to rebuild the
+# db locally via build_db.py, not needed at runtime or in the deployed repo
+batting.csv
+pitching.csv
+allplayers.csv
+
+# Superseded one-off scripts, kept locally for reference only
+archive/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
